@@ -63,7 +63,11 @@ public abstract class Animal {
             this.peso = peso;
         }
     }
-
+/**
+ * Obtiene el código identificativo del animal.
+ * 
+ * @return el código del animal
+ */
     public String getCodigo() {
         return codigo;
     }
@@ -75,7 +79,11 @@ public abstract class Animal {
             this.codigo = codigo;
         }
     }
-
+/**
+ * Obtiene la fecha de nacimiento del animal.
+ * 
+ * @return la fecha de nacimiento del animal
+ */
     public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
@@ -91,7 +99,11 @@ public abstract class Animal {
 
         this.fechaNacimiento = fecha;
     }
-
+/**
+ * Obtiene el sexo del animal.
+ * 
+ * @return el sexo del animal ('M' para hembra, 'H' para macho)
+ */
     public char getSexo() {
         return sexo;
     }
@@ -103,7 +115,11 @@ public abstract class Animal {
             this.sexo = sexo;
         }
     }
-
+/**
+ * Obtiene el peso del animal.
+ * 
+ * @return el peso del animal en kilogramos
+ */
     public double getPeso() {
         return peso;
     }
@@ -152,7 +168,11 @@ public abstract class Animal {
         }
         return true;
     }
-
+/**
+ * Devuelve una representación en texto del animal.
+ * 
+ * @return cadena con la información del animal
+ */
     @Override
     public String toString() {
         return "Animal{" + "codigo=" + codigo + ", fechaNacimiento=" + fechaNacimiento + ", sexo=" + sexo + ", peso=" + peso + '}';
